@@ -6,7 +6,7 @@ Desc
 Screenshots
 
 ## Tecnologias
-Techs
+Techs[app](app)
 
 
 ## License
