@@ -1,5 +1,6 @@
 package com.comunidadedevspace.imc
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -38,7 +39,16 @@ class MainActivity : AppCompatActivity() {
                 val height2 = heightPerson * heightPerson
                 val result = weightPerson / height2
 
-                println("Action of the button " + result)
+
+                // navigate next screen
+                // create layout next screen
+                // forward the data to the next screen
+
+                // Intent - Android Class
+
+                val intent = Intent(this, ResultActivity::class.java)
+                intent.putExtra(KEY_RESULT_BMI, result)
+                startActivity(intent)
             }
 
 
